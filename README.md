@@ -174,14 +174,14 @@ This separation is also why the implementation remains split across several inde
 
 ## 🧬 Component repositories
 
-| Layer | Repository | Main role | Planned archival release | Software DOI |
-|---|---|---|---|---|
-| Sensing | [`esp32-envsensor-mqtt`](https://github.com/pvamos/esp32-envsensor-mqtt) | ESP32-C3 measurement firmware, sensor reading, protobuf encoding and MQTTS publication | `v1.0.0` | pending |
-| Infrastructure | [`alpine-k3s`](https://github.com/pvamos/alpine-k3s) | Alpine Linux + Ansible automation for the k3s/Longhorn cluster | `v1.0.0` | pending |
-| Platform | [`kafka-cluster`](https://github.com/pvamos/kafka-cluster) | Helm-based deployment of VerneMQ, Kafka, Kafka Connect, ClickHouse and Grafana | `v1.0.0` | pending |
-| MQTT processing | [`vernemq-enrich-msg`](https://github.com/pvamos/vernemq-enrich-msg) | Erlang broker plugin for protobuf decoding, metadata enrichment and republishing | `v1.0.0` | pending |
-| Data transformation | [`envsensor-kafka-smt`](https://github.com/pvamos/envsensor-kafka-smt) | Kafka Connect SMT converting enriched protobuf records to RFC 4180 CSV row bytes | `v1.0.0` | pending |
-| Connect runtime | [`kafka-connect-image`](https://github.com/pvamos/kafka-connect-image) | Reproducible Kafka Connect runtime containing MQTT/S3 connectors and the project SMT | `v1.0.0` | optional / pending decision |
+| Layer | Repository | Main role | Release | Version DOI | All-versions DOI |
+|---|---|---|---|---|---|
+| Sensing | [`esp32-envsensor-mqtt`](https://github.com/pvamos/esp32-envsensor-mqtt) | ESP32-C3 measurement firmware, sensor reading, protobuf encoding and MQTTS publication | `v1.0.0` | [`10.5281/zenodo.22884125`](https://doi.org/10.5281/zenodo.22884125) | [`10.5281/zenodo.22884124`](https://doi.org/10.5281/zenodo.22884124) |
+| Infrastructure | [`alpine-k3s`](https://github.com/pvamos/alpine-k3s) | Alpine Linux + Ansible automation for the k3s/Longhorn cluster | `v1.0.0` | [`10.5281/zenodo.22884215`](https://doi.org/10.5281/zenodo.22884215) | [`10.5281/zenodo.22884214`](https://doi.org/10.5281/zenodo.22884214) |
+| Platform | [`kafka-cluster`](https://github.com/pvamos/kafka-cluster) | Helm-based deployment of VerneMQ, Kafka, Kafka Connect, ClickHouse and Grafana | `v1.0.0` | [`10.5281/zenodo.22884473`](https://doi.org/10.5281/zenodo.22884473) | [`10.5281/zenodo.22884472`](https://doi.org/10.5281/zenodo.22884472) |
+| MQTT processing | [`vernemq-enrich-msg`](https://github.com/pvamos/vernemq-enrich-msg) | Erlang broker plugin for protobuf decoding, metadata enrichment and republishing | `v1.0.0` | [`10.5281/zenodo.22883989`](https://doi.org/10.5281/zenodo.22883989) | [`10.5281/zenodo.22883988`](https://doi.org/10.5281/zenodo.22883988) |
+| Data transformation | [`envsensor-kafka-smt`](https://github.com/pvamos/envsensor-kafka-smt) | Kafka Connect SMT converting enriched protobuf records to RFC 4180 CSV row bytes | `v1.0.0` | [`10.5281/zenodo.22883426`](https://doi.org/10.5281/zenodo.22883426) | [`10.5281/zenodo.22883425`](https://doi.org/10.5281/zenodo.22883425) |
+| Connect runtime | [`kafka-connect-image`](https://github.com/pvamos/kafka-connect-image) | Reproducible Kafka Connect runtime containing MQTT/S3 connectors and the project SMT | `v1.0.0` | [`10.5281/zenodo.22884350`](https://doi.org/10.5281/zenodo.22884350) | [`10.5281/zenodo.22884349`](https://doi.org/10.5281/zenodo.22884349) |
 
 The component repositories remain separate because they represent distinct software artifacts with different responsibilities, dependencies and release cycles.
 
@@ -201,7 +201,7 @@ This can be reconsidered later if the repository evolves into a substantial exec
 |---|---|---|---|
 | BSc thesis | Thesis | `10.5281/zenodo.22843091` | published |
 | Planetology Esték presentation | Presentation | `10.5281/zenodo.22869061` | published |
-| Component software releases | Software | individual Zenodo DOIs | preparation in progress |
+| Component software releases | Software | six version-specific Zenodo DOIs | published |
 | Extended environmental sensor dataset | Dataset | Zenodo DOI | planned |
 | Extended statistical / data-science analysis | Paper / preprint | to be determined | planned |
 
@@ -217,29 +217,20 @@ This can be reconsidered later if the repository evolves into a substantial exec
 - **DOI:** `10.5281/zenodo.22869061`
 - **Relationship:** supplement to the thesis
 
-### Planned software publications
+### Published software releases
 
-Each independently useful component will be evaluated as a research-software release. The current working plan is:
+All six independently maintained software components have been archived as versioned `v1.0.0` research-software releases in Zenodo.
 
-| Repository | v1.0.0 DOI plan |
-|---|---|
-| `esp32-envsensor-mqtt` | yes |
-| `alpine-k3s` | yes |
-| `kafka-cluster` | yes |
-| `vernemq-enrich-msg` | yes |
-| `envsensor-kafka-smt` | yes |
-| `kafka-connect-image` | optional; decide after reproducibility review |
+| Repository | Version DOI | All-versions DOI | Published |
+|---|---|---|---|
+| `envsensor-kafka-smt` | [`10.5281/zenodo.22883426`](https://doi.org/10.5281/zenodo.22883426) | [`10.5281/zenodo.22883425`](https://doi.org/10.5281/zenodo.22883425) | 2026-09-21 |
+| `vernemq-enrich-msg` | [`10.5281/zenodo.22883989`](https://doi.org/10.5281/zenodo.22883989) | [`10.5281/zenodo.22883988`](https://doi.org/10.5281/zenodo.22883988) | 2026-09-22 |
+| `esp32-envsensor-mqtt` | [`10.5281/zenodo.22884125`](https://doi.org/10.5281/zenodo.22884125) | [`10.5281/zenodo.22884124`](https://doi.org/10.5281/zenodo.22884124) | 2026-09-22 |
+| `alpine-k3s` | [`10.5281/zenodo.22884215`](https://doi.org/10.5281/zenodo.22884215) | [`10.5281/zenodo.22884214`](https://doi.org/10.5281/zenodo.22884214) | 2026-09-22 |
+| `kafka-connect-image` | [`10.5281/zenodo.22884350`](https://doi.org/10.5281/zenodo.22884350) | [`10.5281/zenodo.22884349`](https://doi.org/10.5281/zenodo.22884349) | 2026-09-22 |
+| `kafka-cluster` | [`10.5281/zenodo.22884473`](https://doi.org/10.5281/zenodo.22884473) | [`10.5281/zenodo.22884472`](https://doi.org/10.5281/zenodo.22884472) | 2026-09-22 |
 
-Each archived software record should contain:
-
-- author + ORCID;
-- software version;
-- MIT license for project-owned code where applicable;
-- link to the source repository;
-- `isSupplementTo -> 10.5281/zenodo.22843091`;
-- descriptive keywords.
-
-After Zenodo mints each software DOI, add the DOI back to the corresponding repository and to this umbrella repository.
+Each software record includes the author ORCID, software version, source-repository link, descriptive keywords, and a reciprocal `isSupplementTo -> 10.5281/zenodo.22843091` relationship to the thesis. The component repositories record both the immutable version DOI and the all-versions DOI.
 
 ### Planned dataset
 
@@ -256,12 +247,12 @@ The first new research paper should analyse the extended dataset rather than rep
 ```text
 BSc thesis DOI 10.5281/zenodo.22843091
   ├── is supplemented by -> presentation DOI 10.5281/zenodo.22869061
-  ├── is supplemented by -> software DOI: esp32-envsensor-mqtt
-  ├── is supplemented by -> software DOI: alpine-k3s
-  ├── is supplemented by -> software DOI: kafka-cluster
-  ├── is supplemented by -> software DOI: vernemq-enrich-msg
-  ├── is supplemented by -> software DOI: envsensor-kafka-smt
-  ├── is supplemented by -> software DOI: kafka-connect-image [if archived]
+  ├── is supplemented by -> esp32-envsensor-mqtt v1.0.0 DOI 10.5281/zenodo.22884125
+  ├── is supplemented by -> alpine-k3s v1.0.0 DOI 10.5281/zenodo.22884215
+  ├── is supplemented by -> kafka-cluster v1.0.0 DOI 10.5281/zenodo.22884473
+  ├── is supplemented by -> vernemq-enrich-msg v1.0.0 DOI 10.5281/zenodo.22883989
+  ├── is supplemented by -> envsensor-kafka-smt v1.0.0 DOI 10.5281/zenodo.22883426
+  ├── is supplemented by -> kafka-connect-image v1.0.0 DOI 10.5281/zenodo.22884350
   └── related to -> extended dataset DOI [future]
 ```
 
@@ -336,7 +327,7 @@ The canonical citation for the BSc research remains the thesis DOI:
 
 > Vámos, Péter (2026). *Környezeti paraméterek mérése a tudomány és technológia fejlődésének tükrében – Egy skálázható szenzorhálózat megvalósításának tanulságai*. DOI: 10.5281/zenodo.22843091.
 
-When citing or reusing a specific software component, cite the **version-specific software DOI** once its Zenodo release exists.
+When citing or reusing a specific software component, cite its **version-specific Zenodo DOI** listed above and in [REFERENCES.md](REFERENCES.md).
 
 See [CITATION.md](CITATION.md) for the citation policy, [CITATION.cff](CITATION.cff) for machine-readable citation metadata, and [REFERENCES.md](REFERENCES.md) for the project-level research-output bibliography.
 

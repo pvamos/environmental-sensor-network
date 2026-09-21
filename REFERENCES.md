@@ -6,8 +6,7 @@ This file is the project-level bibliography and research-output index for the
 The umbrella repository itself is currently a documentation, architecture and
 research-output index and **does not have its own Zenodo DOI**. The original BSc
 research should be cited via the thesis DOI below. Individual software
-components should be cited via their version-specific software DOIs after their
-archival releases are published.
+components should be cited via their version-specific Zenodo software DOIs.
 
 ## Published research outputs
 
@@ -30,21 +29,18 @@ archival releases are published.
 
 ## Research software
 
-The following component repositories are being prepared as independently
-versioned research-software artifacts.
+The six project-owned software components were archived as independently versioned `v1.0.0` research-software artifacts.
 
-| Repository | Role | Planned archival release | Software DOI |
-|---|---|---|---|
-| [`esp32-envsensor-mqtt`](https://github.com/pvamos/esp32-envsensor-mqtt) | Environmental sensor-node firmware | `v1.0.0` | pending |
-| [`alpine-k3s`](https://github.com/pvamos/alpine-k3s) | k3s / Longhorn infrastructure automation | `v1.0.0` | pending |
-| [`kafka-cluster`](https://github.com/pvamos/kafka-cluster) | Environmental data platform deployment | `v1.0.0` | pending |
-| [`vernemq-enrich-msg`](https://github.com/pvamos/vernemq-enrich-msg) | MQTT protobuf enrichment plugin | `v1.0.0` | pending |
-| [`envsensor-kafka-smt`](https://github.com/pvamos/envsensor-kafka-smt) | Kafka Connect protobuf transformation | `v1.0.0` | pending |
-| [`kafka-connect-image`](https://github.com/pvamos/kafka-connect-image) | Reproducible Kafka Connect runtime | `v1.0.0` | optional DOI / pending decision |
+| Repository | Role | Version DOI | All-versions DOI | Published |
+|---|---|---|---|---|
+| [`envsensor-kafka-smt`](https://github.com/pvamos/envsensor-kafka-smt) | Kafka Connect protobuf transformation | [`10.5281/zenodo.22883426`](https://doi.org/10.5281/zenodo.22883426) | [`10.5281/zenodo.22883425`](https://doi.org/10.5281/zenodo.22883425) | 2026-09-21 |
+| [`vernemq-enrich-msg`](https://github.com/pvamos/vernemq-enrich-msg) | MQTT protobuf enrichment plugin | [`10.5281/zenodo.22883989`](https://doi.org/10.5281/zenodo.22883989) | [`10.5281/zenodo.22883988`](https://doi.org/10.5281/zenodo.22883988) | 2026-09-22 |
+| [`esp32-envsensor-mqtt`](https://github.com/pvamos/esp32-envsensor-mqtt) | Environmental sensor-node firmware | [`10.5281/zenodo.22884125`](https://doi.org/10.5281/zenodo.22884125) | [`10.5281/zenodo.22884124`](https://doi.org/10.5281/zenodo.22884124) | 2026-09-22 |
+| [`alpine-k3s`](https://github.com/pvamos/alpine-k3s) | k3s / Longhorn infrastructure automation | [`10.5281/zenodo.22884215`](https://doi.org/10.5281/zenodo.22884215) | [`10.5281/zenodo.22884214`](https://doi.org/10.5281/zenodo.22884214) | 2026-09-22 |
+| [`kafka-connect-image`](https://github.com/pvamos/kafka-connect-image) | Reproducible Kafka Connect runtime | [`10.5281/zenodo.22884350`](https://doi.org/10.5281/zenodo.22884350) | [`10.5281/zenodo.22884349`](https://doi.org/10.5281/zenodo.22884349) | 2026-09-22 |
+| [`kafka-cluster`](https://github.com/pvamos/kafka-cluster) | Environmental data platform deployment | [`10.5281/zenodo.22884473`](https://doi.org/10.5281/zenodo.22884473) | [`10.5281/zenodo.22884472`](https://doi.org/10.5281/zenodo.22884472) | 2026-09-22 |
 
-After each Zenodo software release is created, replace `pending` with the
-version-specific DOI and update the corresponding component repository,
-`README.md`, `CITATION.md`, and this project-level bibliography.
+Use the **version DOI** when citing the exact `v1.0.0` software snapshot associated with this research. The all-versions DOI identifies the software across Zenodo releases and resolves to the latest archived version.
 
 ## Planned dataset
 

@@ -24,9 +24,18 @@ The canonical scholarly citation for the original BSc research is the thesis:
 
 ## Software
 
-When using a particular software component, cite its **version-specific Zenodo software DOI** after the `v1.0.0` archival releases have been created.
+When using a particular software component, cite its **version-specific Zenodo software DOI**:
 
-This file must be updated after those DOIs exist. The component and research-output sections in `README.md` must be updated at the same time.
+| Component | Version | Version DOI | All-versions DOI |
+|---|---|---|---|
+| `envsensor-kafka-smt` | `v1.0.0` | [`10.5281/zenodo.22883426`](https://doi.org/10.5281/zenodo.22883426) | [`10.5281/zenodo.22883425`](https://doi.org/10.5281/zenodo.22883425) |
+| `vernemq-enrich-msg` | `v1.0.0` | [`10.5281/zenodo.22883989`](https://doi.org/10.5281/zenodo.22883989) | [`10.5281/zenodo.22883988`](https://doi.org/10.5281/zenodo.22883988) |
+| `esp32-envsensor-mqtt` | `v1.0.0` | [`10.5281/zenodo.22884125`](https://doi.org/10.5281/zenodo.22884125) | [`10.5281/zenodo.22884124`](https://doi.org/10.5281/zenodo.22884124) |
+| `alpine-k3s` | `v1.0.0` | [`10.5281/zenodo.22884215`](https://doi.org/10.5281/zenodo.22884215) | [`10.5281/zenodo.22884214`](https://doi.org/10.5281/zenodo.22884214) |
+| `kafka-connect-image` | `v1.0.0` | [`10.5281/zenodo.22884350`](https://doi.org/10.5281/zenodo.22884350) | [`10.5281/zenodo.22884349`](https://doi.org/10.5281/zenodo.22884349) |
+| `kafka-cluster` | `v1.0.0` | [`10.5281/zenodo.22884473`](https://doi.org/10.5281/zenodo.22884473) | [`10.5281/zenodo.22884472`](https://doi.org/10.5281/zenodo.22884472) |
+
+Use the version DOI for an exact software snapshot. The all-versions DOI identifies the software across archived releases.
 
 ## Dataset and papers
 
